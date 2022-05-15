@@ -4,41 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
     <link rel="stylesheet" href="./styles/slider.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <title>CSS Mem Slider</title>
 </head>
 <body>
     <div class="wrapper">
-        <input type="radio" id="slider-button-1" class="slider-button" checked>
-        <input type="radio" id="slider-button-2" class="slider-button">
-        <input type="radio" id="slider-button-3" class="slider-button">
-        <input type="radio" id="slider-button-4" class="slider-button">
+
+        <input type="radio"  checked name="mem" id="slider-bullet-1">
+        <input type="radio" name="mem" id="slider-bullet-2">
+        <input type="radio" name="mem" id="slider-bullet-3">
+        <input type="radio" name="mem" id="slider-bullet-4">
+
         <div class="slider-images-wrapper">
-            <div class="slider-images">
-                <img src="./assets/img/mem1.jpg" class="slider-img" alt="mem">
-                <img src="./assets/img/mem2.jpg" class="slider-img" alt="mem">
-                <img src="./assets/img/mem3.jpg" class="slider-img" alt="mem">
-                <img src="./assets/img/mem4.jpg" class="slider-img" alt="mem">
+            <div class="slider-images-container">
+                <img src="./assets/img/mem1.jpg" class="slider-img" alt="Mem">
+                <img src="./assets/img/mem1.jpg" class="slider-img" alt="Mem">
+                <img src="./assets/img/mem1.jpg" class="slider-img" alt="Mem">
+                <img src="./assets/img/mem4.jpg" class="slider-img" alt="Mem">
             </div>
         </div>
+
         <div class="slider-controls-wrapper">
-            <div class="slider-descriptions-wrapper">
-                <div class="slider-desctoptions">
-                    <p class="mem-text" id="mem-text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="mem-text" id="mem-text-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="mem-text" id="mem-text-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="mem-text" id="mem-text-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="slider-titles-wrapper">
+                <div class="slider-titles-inner">
+                    <div class="slider-title">1Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                    <div class="slider-title">2Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                    <div class="slider-title">3Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                    <div class="slider-title">4Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
                 </div>
             </div>
-            <div class="slider-controls">
-                <label class="slider-bullet" for="slider-button-1"></label>
-                <label class="slider-bullet" for="slider-button-2"></label>
-                <label class="slider-bullet" for="slider-button-3"></label>
-                <label class="slider-bullet" for="slider-button-4"></label>
+    
+            <div class="slider-bullets-container">
+                <label class="slider-bullet slider-bullet-1" for="slider-bullet-1">
+                    <span></span>
+                </label>
+                <label class="slider-bullet slider-bullet-2" for="slider-bullet-2">
+                    <span></span>
+                </label>
+                <label class="slider-bullet slider-bullet-3" for="slider-bullet-3">
+                    <span></span>
+                </label>
+                <label class="slider-bullet slider-bullet-4" for="slider-bullet-4">
+                    <span></span>
+                </label>
             </div>
+            
         </div>
-    </div>
+
 </body>
 </html>
