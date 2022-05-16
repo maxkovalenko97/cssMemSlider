@@ -69,7 +69,7 @@ p {
 
 	display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
 }
 
@@ -82,8 +82,8 @@ p {
 }
 
 .slider-bullet {
-	width: 2.2rem;
-	height: 2.2rem;
+	width: 2.5rem;
+	height: 2.5rem;
 	border-radius: 1rem;
 	background: none;
 	cursor: pointer;
@@ -91,6 +91,10 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.slider-bullet:active .bullet{
+	border: 1rem solid #22be59;
 }
 
 .bullet {
@@ -104,6 +108,8 @@ p {
 .bullet:hover {
   background: #FFF;
 }
+
+
 
 #slider-bullet-1:checked~ .slider-container .slider-bullets-container #bullet1,
 #slider-bullet-2:checked~ .slider-container .slider-bullets-container #bullet2,
@@ -174,6 +180,7 @@ p {
 	.common-container {
 		flex-direction: column;
 	}
+
 	.text-wrapper {
 		width: 100%;
 		order: 2;
